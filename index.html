@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <!-- website icon -->
+    <link rel="shortcut icon" href="images/sleet_weather_sunny_cloudy_1460.ico" type="image/x-icon">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: #1b262c">
+    <nav class=" ">
+      <div
+        class="div container d-flex align-items-center justify-content-between py-3"
+      >
+        <a class="logo fw-semibold">Weather</a>
+
+        <ul class="d-flex align-items-center justify-content-between">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="home text-center py-5">
+      <div class="hero container">
+        <h1 class="">Seeing the weather of the whole world</h1>
+
+        <div
+          id="search"
+          class="search d-flex align-items-center justify-content-between gap-3"
+        >
+          <input
+            type="text"
+            class="form-control my-4 p-3"
+            id="exampleFormControlInput1"
+            placeholder="Search Here"
+          />
+          <div
+            class="liveLocation d-flex align-items-center justify-content-between"
+          >
+            <p class="m-0 me-2">MyLocation</p>
+            <i
+              class="fa-solid fa-street-view fa-beat"
+              style="--fa-animation-duration: 2s"
+            ></i>
+          </div>
+        </div>
+        <div class="alert bg-danger d-none">
+          <p class="m-0">
+            Please go to your browser settings and allow access to your location
+          </p>
+        </div>
+        <div class="row gy-4">
+          <div
+            class="loading position-absolute d-flex align-items-center justify-content-center"
+          >
+            <span class="loader"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="error d-flex z-3 align-items-center justify-content-center bg-black position-absolute top-0 start-0 end-0 bottom-0 d-none">
+        <h1 class="">Error 404: Page Not Found</h1>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
