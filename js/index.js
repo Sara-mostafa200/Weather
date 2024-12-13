@@ -44,11 +44,12 @@ async function getWeather(key) {
   }
 
   document.querySelector(".error ").classList.add("d-none")
-
+  document.querySelector(".home").classList.add("d-block")
 }catch(error) {
 
   console.log("hi",error)
   if(error == "TypeError: Failed to fetch"){
+    document.querySelector(".home").classList.add("d-none")
  document.querySelector(".error ").classList.remove("d-none")
   }
 
