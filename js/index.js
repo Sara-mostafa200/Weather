@@ -73,6 +73,7 @@ function Locationx() {
     function (position) {
       var lat =position.coords.latitude;
       var long =position.coords.longitude;
+      // var acs= position.coords.accuracy
       var currentLoction =lat+","+long
       arrange(currentLoction);
     },
@@ -110,7 +111,7 @@ function display() {
     <div class="col-lg-6 col-12">
             <div class="today p-3">
               <div
-                class="content d-flex align-items-start justify-content-evenly"
+                class="content d-flex flex-column  align-items-center flex-md-row  align-items-md-start justify-content-evenly"
               >
                 <div class="">
                   <p class="dayTitle">${(dayName = day[date[i].getDay()])}</p>
